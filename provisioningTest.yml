@@ -73,8 +73,10 @@
       instance_type: "{{ instance_type }}"
       image: "{{ instance_image }}"
       region: "{{ aws_region }}"
-      wait: yes
+      wait: no
       group: allow tcp
       count: 1
-      vpc_subnet_id: "{{result_subnet.subnet.id}}"
+      vpc_subnet_id: "{{ result_subnet.subnet.id }}"
       assign_public_ip: yes
+      instance_tags:
+        name: webserver
