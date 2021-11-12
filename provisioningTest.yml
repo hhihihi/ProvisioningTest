@@ -8,7 +8,7 @@
     vpc_name: simple-vpc
     vpc_cidr_block: 10.210.0.0/16
     subnet_cidr_block: 10.210.1.0/24
-    instance_image: ami-06098fd00463352b6
+    instance_image: ami-0a5a6128e65676ebb
     ec2_key_name: test
     instance_type: t2.micro
   tasks:
